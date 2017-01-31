@@ -1,0 +1,24 @@
+<ion-view title="Prestamo" id="page6">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-thumbsup"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right" class="has-header" ng-controller="misGastosCtrl">
+     <button class="button button-icon icon ion-android-cancel"  ng-controller="logoutCtrl" ng-click="logout()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+  <div class="spacer" style="height: 40px;"></div>
+    <form id="prestamo-form4" class="list" ng-controller="prestamoCtrl">
+      <label class="item item-input" id="prestamo-input6">
+        <span class="input-label">A Quien?</span>
+        <input type="text" ng-model="aquien" placeholder="Nombre o Local">
+      </label>
+      <div class="spacer" style="height: 40px;"></div>
+      <label class="item item-input" id="prestamo-input6">
+        <span class="input-label">Cuanto?</span>
+        <input type="number" ng-model="cuanto" placeholder="$.....">
+      </label> 
+      <button ng-click="prestar()" id="prestamo-button8" class="button button-dark  button-block icon-left ion-social-usd-outline">Prestar</button>
+    </form>
+   
+  </ion-content>
+</ion-view>
