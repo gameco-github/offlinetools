@@ -1,0 +1,12 @@
+<ion-view title="Menu" id="page8" ng-controller="actualizarCtrl">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-xbox"></button>
+  </ion-nav-buttons>
+   <ion-nav-buttons side="right" class="has-header" ng-controller="misGastosCtrl">
+     <button class="button button-icon icon ion-android-cancel"  ng-controller="logoutCtrl" ng-click="logout()"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <button ng-click="actualizar()" ng-controller="gastoCtrl" id="menu-button6" class="button button-dark  button-block icon-left ion-loop">Actualizar</button>
+    <button ng-click="guardarCambios()" id="menu-button7" class="button button-dark  button-block icon-left ion-ios-paper-outline">Guardar Cambios</button>
+  </ion-content>
+</ion-view>

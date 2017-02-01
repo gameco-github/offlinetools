@@ -1,0 +1,24 @@
+<ion-view title="Abono" id="page7">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-ios-paper"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+  <div class="spacer" style="height: 40px;"></div>
+    <form id="abono-form6" name="abonoForm" class="list" ng-controller="abonoCtrl">
+      <label class="item item-select" id="abono-select3">
+        <span class="input-label">Deudor</span>
+        <select ng-model="mySelect" ng-change="cuantoDebe(mySelect)">
+          <option ng-repeat="deudor in deudores"  name="lista" value="{{ deudor }}">{{deudor.nombre}} </option>
+        </select>
+      </label>
+    <div style="text-align: center;"><h5>Debe $ {{deuda}} Por Pagar Restan $ {{deuda - cuanto}}</h5></div> 
+    <div class="spacer" style="height: 20px;"></div>
+      <label class="item item-input" id="abono-input7">
+        <span class="input-label">Abono</span>
+        <input type="number" ng-model="cuanto" placeholder="Cuanto $....">
+      </label> 
+      <button ng-click="abonar(cuanto)" id="abono-button9" class="button button-dark  button-block icon-left ion-ios-compose-outline">Abonar</button>
+    </form>
+   
+  </ion-content>
+</ion-view>

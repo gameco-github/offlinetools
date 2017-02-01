@@ -1,0 +1,29 @@
+<ion-view title="Gastos Gameco" id="page2">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-ios-game-controller-b"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+
+
+    <form id="gastosGameco-form1" class="list" ng-controller="gastosGamecoCtrl" name="formLogin">
+      <div style="margin-left: -10px; width: calc(100% + 20px);">
+        <img src="img/G25cHlB2SPaoff0XJ8sJ_2.jpg" style="display: block; width: 100%; height: 284px; margin-left: auto; margin-right: auto;">
+      </div>
+      <ion-list id="gastosGameco-list1">
+
+
+        <label class="item item-input" id="gastosGameco-input1" >
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="login.email" class="email" name="email" placeholder="correo@gameco.com" required>
+        </label>
+        
+        <label class="item item-input" id="gastosGameco-input2" name="pass">
+          <span class="input-label">Contraseña</span>
+          <input type="password" ng-model="login.password" placeholder="*******">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a ng-click="Entrar()" id="gastosGameco-button1" style="color:#FFFFFF;" class="button button-dark  button-block icon-left ion-power">Entrar</a>
+    </form>
+  </ion-content>
+</ion-view>

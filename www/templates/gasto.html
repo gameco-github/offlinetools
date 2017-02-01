@@ -1,0 +1,24 @@
+<ion-view title="Gasto" id="page3">
+  <ion-content padding="true" class="has-header">
+    <h4 id="gasto-heading1" style="color:#000000;">En que fue el Gasto?</h4>
+    <form id="gasto-form3" class="list sinfondo" ng-controller="gastoCtrl">
+      <label class="item item-select" id="gasto-select1">
+        <span class="input-label">Tipo</span>
+        <select ng-model="mySelect" ng-change="SelectValue(mySelect)">
+          <option ng-repeat="tipo in tipos" name="lista" ng-model="mySelect">{{ tipo.type }}</option>          
+        </select>
+      </label>
+      <div class="spacer" style="height: 40px;"></div>
+      <label class="item item-input" id="gasto-input4">
+        <span class="input-label">Otro?</span>
+        <input type="text" ng-model="otro" value="" placeholder="Gasto alternativo">
+      </label>
+      <div class="spacer" style="height: 40px;"></div>
+      <label class="item item-input" id="gasto-input5" name="gasto">
+        <span class="input-label">Efectivo</span>
+        <input type="number"  ng-model="cantidad" placeholder="$..">
+      </label>
+      <button id="gasto-button5" class="button button-dark  button-block icon-left ion-android-checkbox" ng-click="agregarGasto(otro,cantidad)">Agregar</button>
+   </form>
+  </ion-content>
+</ion-view>
